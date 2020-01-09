@@ -68,7 +68,7 @@ const Page = () => {
 
           <label className="area">
             <div className="area--title">Lembrar Senha</div>
-            <div className="area--input">
+            <div>
               <input
                 type="checkbox"
                 disabled={disabled}

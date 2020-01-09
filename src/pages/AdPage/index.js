@@ -42,9 +42,9 @@ const Page = () => {
           Você está aqui:
         <Link to="/">Home</Link>
           /
-        <Link to={`ads?state=${adInfo.stateName}`}>{adInfo.stateName}</Link>
+        <Link to={`/ads?state=${adInfo.stateName}`}>{adInfo.stateName}</Link>
           /
-        <Link to={`ads?state=${adInfo.stateName}&cat=${adInfo.category.slug}`}>{adInfo.category.name}</Link>
+        <Link to={`/ads?state=${adInfo.stateName}&cat=${adInfo.category.slug}`}>{adInfo.category.name}</Link>
           / {adInfo.title}
         </BreadChumb>
       }
