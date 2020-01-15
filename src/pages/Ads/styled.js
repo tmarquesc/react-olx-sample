@@ -59,5 +59,54 @@ export const PageArea = styled.div`
 
     .rightSide {
       flex:1;
+
+      h2 {
+        margin-top:0;
+        font-size:18px;
+      }
+
+      .listWarning {
+          padding:30px;
+          text-align:center;
+      }
+
+      .list {
+        display:flex;
+        flex-wrap:wrap;
+
+        .aditem {
+          width:33%;
+        }
+      }
+
+      .pagination {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:10px 0;
+
+        .pagItem {
+            background-color:#FFF;
+            border-radius:2px;
+            min-width:30px;
+            height:30px;
+            border:1px solid #000;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:14px;
+            margin-right:5px;
+            padding:5px;
+            cursor:pointer;
+
+            &:hover {
+                border:1px solid #999;
+            }
+
+            &.active {
+                background-color:#CCC;
+            }
+        }  
+      }
     }
 `;
