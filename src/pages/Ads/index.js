@@ -162,7 +162,7 @@ const Page = () => {
                     <div className="pagination">
                         <div onClick={() => setCurrentPage(1)} className="pagItem">Primeira Página</div>
                         {pagination.map((i, k) =>
-                            <div onClick={() => setCurrentPage(i)} className={i === currentPage ? 'pagItem active' : 'pagItem'}>{i}</div>
+                            <div key={k} onClick={() => setCurrentPage(i)} className={i === currentPage ? 'pagItem active' : 'pagItem'}>{i}</div>
                         )}
                         <div onClick={() => setCurrentPage(pagination.length)} className="pagItem">Última Página</div>
                     </div>
