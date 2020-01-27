@@ -35,7 +35,6 @@ const Page = () => {
         const getUser = async () => {
             setLoading(true);
             const user = await api.getUser();
-            console.log(user);
             setName(user.name);
             setEmail(user.email);
             setStateLoc(user.state);
